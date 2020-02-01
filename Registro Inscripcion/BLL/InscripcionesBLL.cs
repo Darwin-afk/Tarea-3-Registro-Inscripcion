@@ -63,6 +63,7 @@ namespace Registro_Inscripcion.BLL
                 var eliminar = db.Inscripciones.Find(id);
                 Personas persona = PersonasBLL.Buscar(eliminar.PersonaId);
                 persona.Balance -= eliminar.Balance;
+                PersonasBLL.Modificar(persona);
                 db.Entry(eliminar).State = EntityState.Deleted;
 
                 paso = db.SaveChanges() > 0;

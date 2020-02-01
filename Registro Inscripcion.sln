@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Registro Inscripcion", "Reg
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Registro InscripcionTests", "Registro InscripcionTests\Registro InscripcionTests.csproj", "{A7887CA2-4A34-458E-A731-3F63177F9E41}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RegistroInscripcion", "RegistroInscripcion", "{4AE788A2-1751-47CB-B178-9B2DC6CC2B48}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -24,6 +26,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{C625EF08-3E4A-4F82-9FE9-FD5CF9AAC317} = {4AE788A2-1751-47CB-B178-9B2DC6CC2B48}
+		{A7887CA2-4A34-458E-A731-3F63177F9E41} = {4AE788A2-1751-47CB-B178-9B2DC6CC2B48}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {11876FEA-F8E0-4BCF-AF32-A24CAC8CEEB5}

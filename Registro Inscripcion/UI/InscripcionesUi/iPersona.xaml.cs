@@ -67,15 +67,15 @@ namespace Registro_Inscripcion.UI.InscripcionesUi
                 {
                     paso = PersonasBLL.Modificar(persona);
                 }
-
-                if (paso)
-                {
-                    limpiar();
-                    MessageBox.Show("Guardado", "Exito", MessageBoxButton.OK, MessageBoxImage.Information);
-                }
-                else
-                    MessageBox.Show("No fue posible guardar", "Fallo", MessageBoxButton.OK, MessageBoxImage.Error);
             }
+
+            if (paso)
+            {
+                limpiar();
+                MessageBox.Show("Guardado", "Exito", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            else
+                MessageBox.Show("No fue posible guardar", "Fallo", MessageBoxButton.OK, MessageBoxImage.Error);
         }
 
         private void BuscarButton_Click(object sender, RoutedEventArgs e)

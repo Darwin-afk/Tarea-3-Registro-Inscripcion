@@ -59,7 +59,7 @@ namespace Registro_Inscripcion.UI.Pagos
         {
             int id;
             Inscripciones inscripcion = new Inscripciones();
-            int.TryParse(PersonaIdTextBox.Text, out id);
+            int.TryParse(InscripcionIdTextBox.Text, out id);
 
             limpiar();
 
@@ -158,7 +158,7 @@ namespace Registro_Inscripcion.UI.Pagos
                 }
             }
 
-            //Telefono
+            //Monto
             if (string.IsNullOrWhiteSpace(MontoTextBox.Text))
                 paso = false;
             else

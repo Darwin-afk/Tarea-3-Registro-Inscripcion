@@ -9,9 +9,10 @@ CREATE TABLE Personas
 	Telefono varchar(13),
 	Cedula varchar(13),
 	Direccion varchar(max),
-	FechaNacimiento date
+	FechaNacimiento date,
+	Balance int
 )
-Go
+GO
 CREATE TABLE Inscripciones
 (
 	InscripcionId int primary key identity,
