@@ -1,0 +1,65 @@
+﻿<Window x:Class="Registro_Inscripcion.UI.InscripcionesUi.iPersona"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Registro_Inscripcion.UI.InscripcionesUi"
+        mc:Ignorable="d"
+        Title="Inscripcion de Persona" Height="450" Width="500">
+    <Grid Background="#FFDADADA">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="71*"/>
+            <ColumnDefinition Width="133*"/>
+            <ColumnDefinition Width="167*"/>
+            <ColumnDefinition Width="129*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10*"/>
+            <RowDefinition Height="45*"/>
+            <RowDefinition Height="42*"/>
+            <RowDefinition Height="52*"/>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="47*"/>
+            <RowDefinition Height="46*"/>
+            <RowDefinition Height="79*"/>
+            <RowDefinition Height="46*"/>
+            <RowDefinition Height="18*"/>
+        </Grid.RowDefinitions>
+        <Label Content="PersonaId" HorizontalAlignment="Left" Margin="6,8,0,0" VerticalAlignment="Top" Grid.Row="1" Grid.Column="1" Height="26" Width="62"/>
+        <TextBox x:Name="PersonaIdTextBox" HorizontalAlignment="Left" Height="32" Margin="16,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="130" Grid.Row="1" Grid.Column="2"/>
+        <Label Content="Nombre" HorizontalAlignment="Left" Margin="6,0,0,0" VerticalAlignment="Center" Grid.Row="2" Grid.Column="1" Height="26" Width="54"/>
+        <TextBox x:Name="NombreTextBox" HorizontalAlignment="Left" Height="32" Margin="16,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="130" Grid.Row="2" Grid.Column="2"/>
+        <Label Content="Teléfono" HorizontalAlignment="Left" Margin="6,11,0,0" VerticalAlignment="Top" Grid.Row="3" Grid.Column="1" Height="26" Width="55"/>
+        <TextBox x:Name="TelefonoTextBox" HorizontalAlignment="Left" Height="32" Margin="16,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="130" Grid.Row="3" Grid.Column="2"/>
+        <Label Content="Cédula" HorizontalAlignment="Left" Margin="6,9,0,0" VerticalAlignment="Top" Grid.Row="4" Grid.Column="1" Height="26" Width="47"/>
+        <TextBox x:Name="CedulaTextBox" HorizontalAlignment="Left" Height="32" Margin="16,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="130" Grid.Row="4" Grid.Column="2"/>
+        <Label Content="Dirección" HorizontalAlignment="Left" Margin="6,7,0,0" VerticalAlignment="Top" Grid.Row="5" Grid.Column="1" Height="26" Width="60"/>
+        <TextBox x:Name="DireccionTextBox" HorizontalAlignment="Left" Height="32" Margin="16,0,0,0" TextWrapping="Wrap" VerticalAlignment="Center" Width="130" Grid.Row="5" Grid.Column="2"/>
+        <Label Content="Fecha Nacimiento" HorizontalAlignment="Left" Margin="6,0,0,0" VerticalAlignment="Center" Grid.Row="6" Grid.Column="1" Height="26" Width="105"/>
+        <DatePicker x:Name="FechaDatePicker" HorizontalAlignment="Left" Height="32" VerticalAlignment="Center" Width="130" Grid.Row="6" Grid.Column="2" Margin="16,0,0,0"/>
+        <Button x:Name="NuevoButton" Content="Nuevo" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Height="39" Margin="29,0,0,0" VerticalAlignment="Center" Width="82" Grid.Row="8" Grid.Column="1" Click="NuevoButton_Click">
+            <Button.Background>
+                <ImageBrush TileMode="Tile" Stretch="Uniform" ImageSource="../../Iconos/nuevo.png" AlignmentX="Left"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="GuardarButton" Content="Guardar" HorizontalContentAlignment="Right"  HorizontalAlignment="Left" Height="39" Margin="26,0,0,0" VerticalAlignment="Center" Width="90" Grid.Row="8" Grid.Column="2" Click="GuardarButton_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="../../Iconos/guardar.jpg" TileMode="Tile" Stretch="Uniform" AlignmentX="Left"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="EliminarButton" Content="Eliminar" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Height="39" Margin="14,0,0,0" VerticalAlignment="Center" Width="84" Grid.Row="8" Grid.Column="3" Click="EliminarButton_Click">
+            <Button.Background>
+                <ImageBrush TileMode="Tile" Stretch="Uniform" ImageSource="../../Iconos/eliminar.png" AlignmentX="Left"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="BuscarButton" Content="Buscar" HorizontalContentAlignment="Right" HorizontalAlignment="Left" Height="32" Margin="14,0,0,0" VerticalAlignment="Center" Width="74" Grid.Row="1" Grid.Column="3" Click="BuscarButton_Click">
+            <Button.Background>
+                <ImageBrush TileMode="Tile" Stretch="Uniform" ImageSource="../../Iconos/buscar.png" AlignmentX="Left"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Balance" Grid.Column="1" HorizontalAlignment="Left" Height="31" Margin="10,10,0,0" Grid.Row="7" VerticalAlignment="Top" Width="101"/>
+        <TextBox x:Name="BalanceTextBox" Grid.Column="2" HorizontalAlignment="Left" Height="31" Margin="16,10,0,0" Grid.Row="7" TextWrapping="Wrap" VerticalAlignment="Top" Width="130" IsEnabled="False"/>
+        <CheckBox x:Name="InscripcionCheckBox" Content="Nueva Inscripcion" Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="16,49,0,0" Grid.Row="7" VerticalAlignment="Top" Width="130"/>
+
+    </Grid>
+</Window>

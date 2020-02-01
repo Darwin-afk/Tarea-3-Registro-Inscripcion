@@ -1,0 +1,28 @@
+﻿<Window x:Class="Registro_Inscripcion.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Registro_Inscripcion"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="400">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="99*"/>
+            <ColumnDefinition Width="202*"/>
+            <ColumnDefinition Width="99*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="65*"/>
+            <RowDefinition Height="71*"/>
+            <RowDefinition Height="80*"/>
+            <RowDefinition Height="76*"/>
+            <RowDefinition Height="62*"/>
+        </Grid.RowDefinitions>
+        <Button x:Name="InscribirButton" Content="Inscribir" HorizontalAlignment="Center" Margin="0,8,0,0" VerticalAlignment="Top" Height="42" Width="168" Grid.Row="1" Grid.Column="1" Click="InscribirButton_Click"/>
+        <Button x:Name="PagarButton" Content="Pagar" HorizontalAlignment="Center" Margin="0,13,0,0" VerticalAlignment="Top" Height="42" Width="168" Grid.Row="2" Grid.Column="1" Click="PagarButton_Click"/>
+        <Button x:Name="ConsultarPersonasButton" Content="Consultar Personas" HorizontalAlignment="Center" Margin="0,17,0,0" VerticalAlignment="Top" Height="42" Width="168" Grid.Row="3" Grid.Column="1" Click="ConsultarPersonasButton_Click"/>
+        <Button x:Name="ConsultarInscripcionesButton" Content="Consultar Inscripciones" HorizontalAlignment="Center" Margin="0,11,0,0" VerticalAlignment="Top" Height="42" Width="168" Grid.Row="4" Grid.Column="1" Click="ConsultarInscripcionesButton_Click"/>
+    </Grid>
+</Window>
